@@ -1,14 +1,47 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+      <div class="Aligner-item Aligner-item--top"></div>
+      <img src="assets/imgs/logo.png">
+      <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div>
+
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+      <button ion-button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+      <ion-title>الفئات</ion-title>
   </ion-navbar>
+  <ion-toolbar color="primary">
+      <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
 </ion-header>
+<ion-searchbar></ion-searchbar>
+<ion-content class="card-background-page">
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-card>
+      <img src="assets/imgs/ffff.jpg" />
+      <div class="card-title">Ramadon</div>
+      <div class="card-subtitle">41 Listings</div>
+  </ion-card>
+
+  <ion-card>
+      <img src="assets/imgs/ssss.jpg" />
+      <div class="card-title">Aid adeha</div>
+      <div class="card-subtitle">64 Listings</div>
+  </ion-card>
+
+  <ion-card>
+      <img src="assets/imgs/bbbb.jpg" />
+      <div class="card-title">Soire Famille</div>
+      <div class="card-subtitle">72 Listings</div>
+  </ion-card>
+
+  <ion-card>
+      <img src="assets/imgs/cccc.jpg" />
+      <div class="card-title">Khissia</div>
+      <div class="card-subtitle">28 Listings</div>
+  </ion-card>
+
 </ion-content>
