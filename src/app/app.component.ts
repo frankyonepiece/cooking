@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { FavoritePage } from '../pages/favorite/favorite';
+import { SettingsPage } from '../pages/settings/settings';
 
 @Component({
   templateUrl: 'app.html'
@@ -21,12 +22,12 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: '???????', component: FavoritePage, icon: "md-heart" },
-      { title: '??????', component: HomePage , icon: "md-basket"},
-      { title: '???? ???', component: FavoritePage , icon: "md-globe"},
-      { title: '????', component: FavoritePage , icon: "md-bowtie"},
-      { title: '???? ???', component: FavoritePage , icon: "md-contact"},
-      { title: '?????', component: FavoritePage , icon: "md-build"}
+      { title: 'المفضله', component: FavoritePage, icon: "md-heart" },
+      { title: 'الفئات', component: HomePage , icon: "md-basket"},
+      { title: 'موقع ويب ', component: FavoritePage , icon: "md-globe"},
+      { title: 'أفضل', component: FavoritePage , icon: "md-bowtie"},
+      { title: 'اتصل بنا', component: FavoritePage , icon: "md-contact"},
+      { title: 'إعدادات', component: SettingsPage , icon: "md-build"}
     ];
 
   }
@@ -34,7 +35,7 @@ export class MyApp {
   initializeApp() {
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
+      // Hre you can do any higher level native things you might need.
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
