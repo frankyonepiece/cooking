@@ -1,11 +1,13 @@
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform } from 'ionic-angular';
+import { Nav, Platform , ModalController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { FavoritePage } from '../pages/favorite/favorite';
 import { SettingsPage } from '../pages/settings/settings';
+import { SplishSplashScreenPage } from '../pages/splish-splash-screen/splish-splash-screen';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -17,8 +19,15 @@ export class MyApp {
 
   pages: Array<{title: string, component: any , icon: string }>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
-    this.initializeApp();
+  constructor(public platform: Platform, public statusBar: StatusBar,public modalCtrl: ModalController  , public splashScreen: SplashScreen) {
+    
+    //splash screen
+    this.platform.ready().then(() => {
+        statusBar.styleDefault();
+        let splash = modalCtrl.create(SplishSplashScreenPage);
+        splash.present();
+      });
+
 
     // used for an example of ngFor and navigation
     this.pages = [
@@ -30,15 +39,6 @@ export class MyApp {
       { title: 'إعدادات', component: SettingsPage , icon: "md-build"}
     ];
 
-  }
-
-  initializeApp() {
-    this.platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Hre you can do any higher level native things you might need.
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
-    });
   }
 
   openPage(page) {

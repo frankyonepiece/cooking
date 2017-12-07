@@ -1,0 +1,64 @@
+{"list":[
+    {
+        "background":"assets/imgs/ramadan.jpg",
+        "title":"Ramedan",
+        "array":[{
+            "chebakia":{
+                "title":"الشباكية",
+                "content":{  
+                    "makadir":"مقادير",
+                    "imgMkadir":"fuck.gif",
+                    "tahedir":"طريقة تحضير",
+                    "imgTahedir":"imageURL.png"
+                    }
+            }
+        }]
+    },
+    {
+        "background":"assets/imgs/aid.jpg",
+        "title":"Aid",
+        "array":[{
+            "fekas":{
+                "title":"فقاس",
+                "content":[{  
+                    "makadir":"مقادير",
+                    "imgMkadir":"fuck.gif",
+                    "tahedir":"طريقة تحضير",
+                    "imgTahedir":"imageURL.png"
+                }]
+            }
+    }]
+    },
+    {
+        "background":"assets/imgs/aid.jpg",
+        "title":"Aid",
+        "array":[{
+            "fekas":{
+                "title":"فقاس",
+                "content":[{  
+                    "makadir":"مقادير",
+                    "imgMkadir":"fuck.gif",
+                    "tahedir":"طريقة تحضير",
+                    "imgTahedir":"imageURL.png"
+                }]
+            }
+    }]
+    },
+    {
+        "background":"assets/imgs/aid.jpg",
+        "title":"Aid",
+        "array":[{
+            "fekas":{
+                "title":"فقاس",
+                "content":[{  
+                    "makadir":"مقادير",
+                    "imgMkadir":"fuck.gif",
+                    "tahedir":"طريقة تحضير",
+                    "imgTahedir":"imageURL.png"
+                }]
+            }
+    }]
+    }
+    
+]
+}
