@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Http } from '@angular/http'
+import { List2Page } from '../list2/list2';
 import 'rxjs/add/operator/map';
 
 @Component({
@@ -18,7 +19,7 @@ export class HomePage {
       title:""
     }];
   
-  constructor(public navCtrl: NavController , public http: Http) {
+  constructor(public navCtrl: NavController , public http: Http ) {
     //hadi bach n3ayet 3la function li sawebt bach ghi tkhdem had l page tkhadem function
     this.getLoadFile();
   
@@ -43,6 +44,11 @@ export class HomePage {
     
   }
 
+
+  nextPage(dataPassed){
+    this.navCtrl.push(List2Page,{pass:dataPassed});
+  }
+  
   // had lfunction dyal recherche hateha hna bach nesta3mela fi page list2
   /*initializeItems() {
     this.items = [

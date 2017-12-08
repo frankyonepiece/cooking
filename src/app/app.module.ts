@@ -7,6 +7,8 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { FavoritePage } from '../pages/favorite/favorite';
 import { SettingsPage } from '../pages/settings/settings';
+import { List2Page } from '../pages/list2/list2';
+import { ContentPage } from '../pages/content/content';
 import { SplishSplashScreenPage } from '../pages/splish-splash-screen/splish-splash-screen';
 
 
@@ -20,6 +22,8 @@ import { FileProvider } from '../providers/file/file';
     HomePage,
     FavoritePage,
     SettingsPage,
+    List2Page,
+    ContentPage,
     SplishSplashScreenPage
   ],
   imports: [
@@ -33,6 +37,8 @@ import { FileProvider } from '../providers/file/file';
     HomePage,
     FavoritePage,
     SettingsPage,
+    List2Page,
+    ContentPage,
     SplishSplashScreenPage
   ],
   providers: [

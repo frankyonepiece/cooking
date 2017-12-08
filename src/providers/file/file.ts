@@ -9,11 +9,13 @@ export class FileProvider {
   constructor(public http: Http) {
   }
 
-  getLoadFile(){
+  LoadFile(){
+    // had setar hwa li kayejib json file w kay7eto fi variable data
     this.http.get('assets/file_json/jsonFile.json').map(res => res.json())
-    .subscribe(ramadan => {
-      return ramadan;
+    .subscribe(data => {
+      
     }); 
+    
   }
 
 }
