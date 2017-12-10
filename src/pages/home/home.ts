@@ -10,13 +10,14 @@ import 'rxjs/add/operator/map';
 })
 export class HomePage {
 
- // items: string[];
+ 
 
   //had variable bach naficher list dyal les carts li kayeni fi Home.html
   //had variable kaymiyez bi anak t9ed t7et fiha 2 dyal les variable wtkhedem biom fi loop w7eda
   posts=[{
       background:"",
-      title:""
+      title:"",
+      size:""
     }];
   
   constructor(public navCtrl: NavController , public http: Http ) {
@@ -32,12 +33,15 @@ export class HomePage {
     .subscribe(data => {
       //variable data fiha l file kolo t9ed tseta3melha
 
+      var count = Object.keys(data.list).length;
       //had loop bach n7et bachground li kayena fi json file fi variable bachground
-      for(let i = 0; i < 4; i++)
+      for(let i = 0; i < count; i++)
       {
+        var siz= Object.keys(data.list[i].array).length;
         this.posts.push({
             background : data.list[i].background, 
-            title : data.list[i].title
+            title : data.list[i].title,
+            size:""+siz
         })
       }
     }); 
@@ -50,27 +54,7 @@ export class HomePage {
   }
   
   // had lfunction dyal recherche hateha hna bach nesta3mela fi page list2
-  /*initializeItems() {
-    this.items = [
-      'Amsterdam',
-      'Bogota',
-      'Buenos Aires',
-      'Cairo',
-      'Washington'
-    ];
-  }
-
-  getItems(q: string) {
-    // Reset items back to all of the items
-    this.initializeItems();
-
-    // if the value is an empty string don't filter the items
-    if (!q || q.trim() === '') {
-      return;
-    }
-
-    this.items = this.items.filter((v) => v.toLowerCase().indexOf(q.toLowerCase()) > -1);
-  }
+  /*
   */
 
   

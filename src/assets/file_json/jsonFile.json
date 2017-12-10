@@ -4,8 +4,8 @@
         "title":"Ramedan",
         "array":[
                 {
-                    "background":"assets/imgs/ramadan.jpg",
-                    "title":"الشباكية",
+                    "background":"assets/imgs/bescout.jpg",
+                    "title":"A",
                     "content":{  
                         "makadir":"مقادير",
                         "imgMkadir":"fuck.gif",
@@ -15,14 +15,24 @@
                 },
                 {
                     "background":"assets/imgs/ramadan.jpg",
-                    "title":"الشباكية",
+                    "title":"F",
                     "content":{  
                         "makadir":"مقادير",
                         "imgMkadir":"fuck.gif",
                         "tahedir":"طريقة تحضير",
                         "imgTahedir":"imageURL.png"
                         }
-                    }
+                },
+                {
+                    "background":"assets/imgs/gatauxBiLouz.jpg",
+                    "title":"G",
+                    "content":{  
+                        "makadir":"مقادير",
+                        "imgMkadir":"fuck.gif",
+                        "tahedir":"طريقة تحضير",
+                        "imgTahedir":"imageURL.png"
+                        }
+                }
         ]
     },
     {
@@ -30,8 +40,8 @@
         "title":"Aid",
         "array":[
                 {
-                "background":"assets/imgs/ramadan.jpg",
-                "title":"فقاس",
+                "background":"assets/imgs/halwabikawkaw.jpg",
+                "title":"B",
                 "content":[{  
                     "makadir":"مقادير",
                     "imgMkadir":"fuck.gif",
@@ -43,11 +53,11 @@
     },
     {
         "background":"assets/imgs/aid.jpg",
-        "title":"Aid",
+        "title":"ares",
         "array":[
             {
                 "background":"assets/imgs/ramadan.jpg",    
-                "title":"فقاس",
+                "title":"C",
                 "content":[{  
                     "makadir":"مقادير",
                     "imgMkadir":"fuck.gif",
@@ -57,7 +67,7 @@
             },
             {
                 "background":"assets/imgs/ramadan.jpg",    
-                "title":"فقاس",
+                "title":"D",
                 "content":[{  
                     "makadir":"مقادير",
                     "imgMkadir":"fuck.gif",
@@ -69,11 +79,11 @@
     },
     {
         "background":"assets/imgs/aid.jpg",
-        "title":"Aid",
+        "title":"khetana",
         "array":[
             {
                 "background":"assets/imgs/ramadan.jpg",
-                "title":"فقاس",
+                "title":"E",
                 "content":[{  
                     "makadir":"مقادير",
                     "imgMkadir":"fuck.gif",

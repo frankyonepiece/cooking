@@ -6,11 +6,14 @@
       </button> 
     <ion-title>{{Title}}</ion-title>
   </ion-navbar>
-
+  <ion-toolbar>
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  </ion-toolbar>
 </ion-header>
 
 
 <ion-content class="card-background-page">
+  
   <ion-card  *ngFor="let item of items" (click)="nextPage()">
     <img [src]="item.background"/>
       <div class="card-title">{{item.title}}</div>

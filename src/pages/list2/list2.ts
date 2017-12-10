@@ -12,6 +12,8 @@ import { ContentPage } from '../../pages/content/content'
 
 export class List2Page {
 
+  search;
+
   Title:String;
   items=[{
     background:"",
@@ -23,7 +25,7 @@ export class List2Page {
   }];
   
   constructor(public navCtrl: NavController, public navParams: NavParams , public http: Http) {
-    this.getInfo();
+    this.getInfo(); 
   }
 
   getInfo(){
@@ -41,7 +43,6 @@ export class List2Page {
       }
 
       var count = Object.keys(data.list[this.position[0].P1].array).length;
-          console.log(count);
       
       for(let i=0; i < count ; i++)
       {
@@ -54,7 +55,7 @@ export class List2Page {
             });
          }
       }
-
+      
     });
   }
 
@@ -62,5 +63,23 @@ export class List2Page {
   nextPage(){
     this.navCtrl.push(ContentPage,{position_1:this.position[0].P1 , position_2:this.position[0].P2 });
   }
+
+
+  
+
+  getItems(ev) {
+    // set val to the value of the ev target
+    var val = ev.target.value;
+
+    // if the value is an empty string don't filter the items
+    if (val && val.trim() != '') {
+      this.items = this.items.filter((item) => {
+        return (item.title.toLowerCase().indexOf(val.toLowerCase()) > -1);
+      });
+    }else{
+      this.getInfo();
+    }
+}
+
 
 }

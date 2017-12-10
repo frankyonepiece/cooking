@@ -6,14 +6,14 @@
     <ion-title>الفئات</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-searchbar></ion-searchbar>
+
 <ion-content class="card-background-page">
 
     
   <ion-card *ngFor="let post of posts" (click)="nextPage(post.title)">
     <img [src]="post.background"/>
       <div class="card-title">{{post.title}}</div>
-      <div class="card-subtitle">41 Listings</div>
+      <div class="card-subtitle">{{post.size}}</div>
   </ion-card>
 
 
